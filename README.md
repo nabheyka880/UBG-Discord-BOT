@@ -5,7 +5,7 @@
 <div align="center">
 <img src="banner.png"></img>
 
-# Untitled Button Game DS Bot - _UNSUPPORTED_
+# Untitled Button Game Discord Bot - _UNSUPPORTED_
 
 This is a discord bot that was made for a discontinued and abandoned game called [Untitled Button Game]() (UBG for short) on ROBLOX. Once the game was discontinued officially, the bot was also discontinued and unsupported.
 
