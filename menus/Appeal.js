@@ -1,0 +1,21 @@
+const { TextInputBuilder, TextInputStyle, ActionRowBuilder, ModalBuilder } = require("discord.js")
+
+module.exports = async (interaction) => {
+    const user_id = new TextInputBuilder()
+        .setLabel("Your User ID")
+        .setPlaceholder("Place your User ID here.")
+        .setCustomId("user_id")
+        .setStyle(TextInputStyle.Short)
+    const explanation = new TextInputBuilder()
+        .setLabel("Explanation")
+        .setCustomId("explanation")
+        .setPlaceholder("Please put in an explanation of why you got banned here.")
+        .setStyle(TextInputStyle.Paragraph)
+    const id_row = new ActionRowBuilder().addComponents(user_id)
+    const explanation_row = new ActionRowBuilder().addComponents(explanation)
+    const modal = new ModalBuilder()
+        .setTitle("Ban Appeal")
+        .addComponents(id_row, explanation_row)
+        .setCustomId("modal_appeal")
+    interaction.showModal(modal)
+}
