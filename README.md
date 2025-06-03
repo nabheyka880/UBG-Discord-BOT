@@ -1,4 +1,4 @@
-## > [!CAUTION] This bot does not use the latest version of discord.js (14.19.3), so it doesn't support Components V2.
+> ## [!CAUTION] This bot does not use the latest version of discord.js (14.19.3), so it doesn't support Components V2.
 
 <div align="center">
 <img src="banner.png"></img>
